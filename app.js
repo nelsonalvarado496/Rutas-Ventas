@@ -24,6 +24,22 @@ app.use(cors(
   ));
 
 
+const rutasRoutes = require('./Rutas/empresa');
+const clientesRoutes = require('./Rutas/clientes');
+const formapagosRoutes = require('./Rutas/formapagos');
+const pagosRoutes = require('./Rutas/pagos');
+const productoRoutes = require('./Rutas/producto');
+const proveedorRoutes = require('./Rutas/proveedor');
+const sucursalesRoutes = require('./Rutas/sucursales');
+const tipoproductoesRoutes = require('./Rutas/tipoproducto');
+const tipousuarioRoutes = require('./Rutas/tipousuario');
+
+
+
+
+
+
+
 app.set('port', process.env.PORT || 3000);
 
 
@@ -58,6 +74,8 @@ app.get('/probar-mysql', (req, res) => {
         });
     });
 });
+
+
 
 
 
